@@ -1,0 +1,112 @@
+.dashboard-main{
+    flex: 1;
+    overflow-x: hidden;
+    .dashboard-header{
+        padding: 20px;
+        @include flex-between;
+      
+        .mbl-menu{
+            padding: 10px 10px;
+            background-color: rgba($color: $color-red, $alpha: 0.7);
+            color: $color-white;
+            cursor: pointer;
+            transition: all 0.5s;
+            border-radius: 3px;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-white;
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                margin-right: 15px;
+                position: relative;
+                &::after{
+                    content: '';
+                    width:20px;
+                    height: 0px;
+                    background-color: $white;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    transition: all 0.2s;
+                }
+                &:hover{
+                    &::after{
+                        height: 3px;
+                    }
+                }
+            }
+            .nav-link{
+                color: $gray-100;
+            }
+        }
+        .user-info{
+            @include flex-start;
+            .user-notification{
+                padding: 5px 10px;
+                margin-right: 20px;
+                color: $color-white;
+                font-size: 20px;
+                border-radius: 3px;
+                display: block;
+                cursor: pointer;
+                @include maxbp(767px){
+                    margin-right: 10px;
+                }
+            }
+            .search-icon{
+                padding: 5px 10px;
+                margin-right: 20px;
+                color: $color-white;
+                font-size: 20px;
+                border-radius: 3px;
+                display: block;
+                cursor: pointer;
+                position: relative;
+                @include maxbp(767px){
+                    margin-right: 10px;
+                }
+                .search-area{
+                    position: absolute;
+                    top: 110%;
+                    right: 0;
+                    width: 250px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.5s;
+                    &.active{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 100%;
+                    }
+                    .btn{
+                        padding: 12px;
+                    }
+                }
+            }
+            .user-meta{
+                @include flex-start;
+                .profile-dp{
+                    width: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    @include maxbp(767px){
+                        width: 50px;
+                    }
+                    img{width: 100%;}
+                }
+                .meta{
+                    .name{font-weight: bold;color: $white;}
+                    .designation{
+                        color: $gray-100;
+                    }
+                }
+            }
+        }
+    }
+    .dashboard-content{
+        padding: 20px;
+    }
+}

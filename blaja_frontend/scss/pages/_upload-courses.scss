@@ -1,0 +1,113 @@
+.lectures-row {
+  @include flex-between;
+  background: $color-white;
+
+  .lecture-left {
+    p {
+      font-weight: 600;
+      font-size: 20px;
+      @include flex-start;
+      @include maxbp(767px) {
+        font-size: 16px;
+      }
+      @include maxbp(576px) {
+        font-size: 14px;
+      }
+      a {
+        margin-right: 0.6em;
+      }
+    }
+  }
+}
+.questions-area {
+  background: $color-white;
+  border-radius: 15px;
+  box-shadow: -1px 2px 2px #ccc;
+  //   p {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     b{
+  //         flex: 0 0 10%;
+  //     }
+  //   }
+  .question {
+    display: flex;
+    // justify-content: space-between;
+    input[type="text"] {
+      border: none;
+      padding-bottom: 5px !important;
+      border-bottom: $color-gray solid 1px;
+      &:focus {
+        outline: none;
+      }
+    }
+    @include maxbp(991px) {
+      flex-wrap: wrap;
+    }
+    .question-left {
+      flex: 0 0 12%;
+      @include maxbp(991px) {
+        flex: 0 0 20%;
+      }
+      @include maxbp(767px) {
+        flex: 0 0 100%;
+      }
+    }
+    .question-right {
+      display: flex;
+      li {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 1em;
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  hr {
+    border-top: $color-black dashed 3px;
+    background: none;
+  }
+  .marks-area {
+    .mark-left {
+      @include flex-start;
+      @include maxbp(576px) {
+        @include flex-center;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        margin-right: 10px;
+      }
+      input {
+        width: 15%;
+        @include maxbp(991px) {
+          width: 25%;
+        }
+      }
+    }
+    .mark-right {
+      @include flex-end;
+      @include maxbp(576px) {
+        @include flex-center;
+        margin-top: 20px;
+      }
+      .mark-btn {
+        margin: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.upload-courses{
+  .accordion-item{
+    background: $color-white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -1px 2px 2px #ccc;
+  }
+}

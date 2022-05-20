@@ -1,0 +1,49 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/animations';
+
+@import 'vendors/animate/animate';
+@import 'vendors/aos/aos.scss';
+@import 'vendors/bootstrap/bootstrap.scss';
+@import 'vendors/lightbox/lightbox.scss';
+@import 'vendors/silk/slick-theme.scss';
+@import 'vendors/silk/slick.scss';
+@import 'vendors/fontawesome/all.scss';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/cards-sm';
+@import 'components/courses-card';
+@import 'components/student-cards';
+@import 'components/tables';
+@import 'components/avatar-upload';
+
+@import 'dashboard/dashboard';
+@import 'dashboard/aside';
+@import 'dashboard/main';
+
+// @import 'pages/dashboard-login';
+// @import 'pages/upload-courses';
+@import 'pages/eveluation-page';
+@import 'pages/student-detail';
+@import 'pages/landing-page';
+@import 'pages/signin-page';
+@import 'pages/signup-page';
+@import 'pages/profiles-page';
+@import 'pages/profile-page';
+@import 'pages/dashboard';
+
+@import 'themes/dark';
+
+
+
+
+

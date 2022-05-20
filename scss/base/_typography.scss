@@ -1,0 +1,27 @@
+body{
+    font-family: $font-primary;
+}
+
+.page-title{
+    h2{
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    h3{
+        color: $gray-600;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.heading {
+    h4 {
+      font-size: 16px;
+      color: $gray-500;
+    }
+    h1{
+        color: $color-blue;
+        font-weight: 900;
+    }
+  }
+  

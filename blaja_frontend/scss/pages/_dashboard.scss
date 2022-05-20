@@ -1,0 +1,20 @@
+.dashboard-page{
+    .card-main{
+            .card{box-shadow: none;color: $white; padding: 50px 20px !important;}
+            .card-1{
+                background-color: rgba(#39ac34,0.8);
+            }
+            .card-2{
+                background-color: rgba(#1b67ba,0.8);
+            }
+            .card-3{
+                background-color: rgba(#896d1e,0.8);
+            }
+            .card-4{
+                background-color: rgba(#a24db5,0.8);
+            }
+            .card-5{
+                background-color: rgba(#32a69b,0.8);
+            }
+    }
+}

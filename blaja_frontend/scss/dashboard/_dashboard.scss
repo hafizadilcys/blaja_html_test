@@ -1,0 +1,8 @@
+.dashboard{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(rgba($black,0.7),rgba($black,0.7)), url(../images/dashboard-bg.jpg);
+    background-size: cover;
+    background-position : center bottom;
+}

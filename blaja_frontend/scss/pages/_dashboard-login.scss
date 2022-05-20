@@ -1,0 +1,48 @@
+.dashboard-login{
+    // background:linear-gradient(rgba($color-blue,0.7),rgba($color-blue,0.7)), url(../images/dashboard-bg.jpg);
+    background: url(../images/dashboard-bg.jpg);
+    min-height: 100vh;
+    padding: 30px 50px;
+    @include maxbp(991px){
+        padding: 3%;
+    }
+    background-size: cover;
+    @include flex-center;
+    .login-msg{
+        h2{
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: bold;
+            @include maxbp(575PX){
+                font-size: 22px;
+            }
+        }
+        p{
+            text-transform: uppercase;
+            font-size: 20px;
+            @include maxbp(575PX){
+                font-size: 16px;
+            }
+        }
+    }
+    .logo{
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        img{width: 100%;}
+        margin-bottom: 20px;
+        @include maxbp(575PX){
+            width: 150px;
+        }
+    }
+
+    .form{
+        background-color: $color-white;
+        border-radius: 28px;
+        padding:55px;
+        @include maxbp(991px){
+            padding: 30px;
+        }
+    }
+
+}

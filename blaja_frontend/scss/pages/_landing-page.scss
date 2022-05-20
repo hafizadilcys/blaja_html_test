@@ -1,0 +1,106 @@
+.landing-page{
+    background-color: $black;
+    .header{
+        background: url('../images/landing-page/sign_up_bg.png');
+        background-size: cover;
+        position: relative;
+        border-bottom: 15px  solid rgba($white,0.1);
+        .header-content{
+            min-height: 90vh;
+            @include flex-center;
+            flex-direction: column;
+            .content{
+                color: $color-white;
+                text-align: center;
+                h1{
+                    font-weight: 800;
+                }
+                h2{
+                    font-weight: 600;
+
+                }
+                p{
+
+                }
+            }
+        }
+    }
+    .input-group{
+        .btn{
+            padding: 0.7em 1em !important;
+        }
+    }
+    section{
+        border-bottom: 15px  solid rgba($white,0.1);
+        padding: 50px 0;
+        color: $color-white;
+        h2{
+            font-weight: 700;
+        }
+        img{width: 80%;display: block;margin-left: auto;margin-right: auto;}
+    }
+
+    .accordion{
+        .accordion-item{margin-bottom: 7px;font-weight: 500;}
+        .accordion-header{
+            background-color: rgba($white,0.1);
+            color: $color-white;
+            border-bottom: 1px solid $black;
+            .accordion-button:not(.collapsed){
+                background-color: rgba($white,0.1);
+                &::after{
+                    content: '\f00d';
+                    font-family: "Font Awesome 5 Free"; font-weight: 700;
+                    background-image: none;
+                    color: $color-white;
+                }
+
+            }
+            .accordion-button{
+                color: $color-white;
+                font-weight: 500;
+                &:focus {
+                    z-index: 3;
+                    border-color: transparent;
+                    outline: 0;
+                    box-shadow:none;
+                }
+                &::after{
+                    content: '\f067';
+                    font-family: "Font Awesome 5 Free"; font-weight: 700;
+                    background-image: none;
+                    color: $color-white;
+                }
+            }
+        }
+        .accordion-body{
+            background-color: rgba($white,0.1);
+        }
+    }
+
+    .footer{
+        padding: 50px 0;
+        color: $gray-600;
+        h3{
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: $gray-600;
+                    text-decoration: none;    
+                    font-size: 14px;  
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $color-red;
+                    }  
+                }
+            }
+        }
+    }
+}

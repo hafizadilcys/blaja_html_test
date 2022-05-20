@@ -1,0 +1,59 @@
+.dashboard-main{
+    background-color: $color-gray;
+    flex: 1;
+    overflow-x: hidden;
+    .dashboard-header{
+        padding: 20px;
+        background-color: $color-white;
+        @include flex-between;
+      
+        .mbl-menu{
+            padding: 10px 10px;
+            background-color: rgba($color: $color-blue, $alpha: 0.1);
+            color: $color-primary;
+            cursor: pointer;
+            transition: all 0.5s;
+            border-radius: 3px;
+            &:hover{
+                background-color: $color-primary;
+                color: $color-white;
+            }
+        }
+        .user-info{
+            @include flex-start;
+            .user-notification{
+                padding: 5px 10px;
+                margin-right: 20px;
+                background: rgba($color-blue , 0.1);
+                color: $color-primary;
+                border-radius: 3px;
+                display: block;
+                @include maxbp(767px){
+                    margin-right: 10px;
+                }
+            }
+            .user-meta{
+                @include flex-start;
+                .profile-dp{
+                    width: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    @include maxbp(767px){
+                        width: 50px;
+                    }
+                    img{width: 100%;}
+                }
+                .meta{
+                    .name{font-weight: bold;}
+                    .designation{
+                        color: $gray-500;
+                    }
+                }
+            }
+        }
+    }
+    .dashboard-content{
+        padding: 20px;
+    }
+}

@@ -1,0 +1,163 @@
+    .signup-page{
+        background:$color-white;
+        background-size: cover;
+        min-height: 100vh;
+        @include flex-between;
+        flex-direction: column;
+        .signup-container{
+            padding: 3%;
+            max-width: 500px;
+            border-radius: 6px;
+            margin: 100px auto;
+            &.container-lg{
+                max-width: 900px;
+            }
+            h2{
+                font-weight: 700;
+            }
+
+         .steps{
+             font-size: 15px;
+             font-weight: 600;
+         }
+         .bottom-text{
+             color: $gray-500;
+             font-size: 14px;
+             font-weight: 500;
+             a{
+                 color: $color-red;
+             }
+         }
+         .icon{
+             color: $color-red;
+             i{
+                 font-size: 44px;
+             }
+         }
+         ul{
+             padding: 0;
+             max-width: 310px;
+             margin-left: auto;
+             margin-right: auto;
+             list-style: none;
+             li{
+                 margin-bottom: 10px;
+                 position: relative;
+                 display: flex;
+                 &::before{
+                     margin-right: 18px;
+                        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f00c";color: $color-red;
+                 }
+             }
+         }
+            a{
+                text-decoration: none;
+                transition: all 0.5s;
+                color: $color-red;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            a.btn{
+                text-decoration: none !important;
+            }
+            .signup-bottom{
+                font-size: 14px;
+                .fb-login{
+                    i{
+                        color: $blue-400;
+                    }
+                }
+                .link{
+                    a{color: $white;font-weight: 600;}
+                }
+                .info{
+                    font-size: 12px;
+                    a{color: $color-red;}
+                }
+            }
+        }
+        .footer{
+            background-color: $color-gray;
+            border-top: 1px solid $gray-400;
+            padding: 40px 0;
+            color: $gray-600;
+            width: 100%;
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            ul{
+                padding: 0;
+                list-style: none;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: $gray-600;
+                        text-decoration: none;    
+                        font-size: 14px;  
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $color-red;
+                        }  
+                    }
+                }
+            }
+        }
+        .table{
+            thead{
+                th{
+                    border-radius: 0;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    position: relative;
+                    &:not(.empty){
+                        cursor: pointer;
+                    }
+                    &::before{
+                        content: '';
+                        width: 100%;
+                        height:calc( 100% + 2px);
+                        border: 3px solid $white;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    &.active{
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            bottom: -6px;
+                            left: 50%;
+                            transform: translateX(-50%) rotate(45deg);
+                            background-color: $color-red;
+                        }
+                        
+                    }
+                }
+                th:first-child{
+                    background-color: $color-white;
+                   
+                }
+            }
+            tbody{
+                td:not(:first-child){
+                    text-align: center;
+                    color: $gray-500;
+                }
+                td{
+                    border-bottom: 1px solid $gray-400;
+                    
+                }
+                tr:last-child{
+                    td{
+                        border-bottom: 0;
+                       
+                    }
+                }
+            }
+        }
+    }

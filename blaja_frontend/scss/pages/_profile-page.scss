@@ -1,0 +1,30 @@
+.profile-page{
+    .footer{
+        background-color: $color-gray;
+        border-top: 1px solid $gray-400;
+        padding: 40px 0;
+        color: $gray-600;
+        width: 100%;
+        h3{
+            font-weight: 500;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: $gray-600;
+                    text-decoration: none;    
+                    font-size: 14px;  
+                    transition: all 0.5s;
+                    &:hover{
+                        color: $color-red;
+                    }  
+                }
+            }
+        }
+    }
+}

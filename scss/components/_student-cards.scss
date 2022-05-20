@@ -1,0 +1,49 @@
+.student-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card{
+        width: 18%;
+        background: transparent;
+        border: 0;
+        text-decoration: none;
+        color: $color-black;
+        margin-bottom: 26px;
+        @include maxbp(1200px){
+            width: 24%;
+        }
+        @include maxbp(800px){
+            width: 32%;
+        }
+        @include maxbp(530px){
+            width: 48%;
+        }
+        @include maxbp(360px){
+            width: 98%;
+        }
+        .img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .name{
+            font-size: 18px;
+            font-weight: bold;
+            color: $color-primary;
+            text-align: center;
+            width: 100%;
+        }
+        .info{
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

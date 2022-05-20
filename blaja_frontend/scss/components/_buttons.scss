@@ -1,0 +1,49 @@
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+.btn-main {
+  border-radius: 30px;
+  padding: 0.7em 1.5em !important;
+  border: $color-blue solid 2px !important;
+  font-weight: 700;
+  @include maxbp(600px){
+    padding:0.4em 1em !important;
+  }
+  &.btn-primary {
+    background: $color-blue !important;
+  }
+  &.btn-outline-primary {
+    color: $color-blue !important;
+    &:hover {
+      background: transparent !important;
+    }
+  }
+
+
+}
+.icon-button {
+  background: $color-blue !important;
+  color: $color-white;
+  &:hover {
+    color: $color-white;
+  }
+}
+.icon-button-sm {
+  font-size: 12px;
+  padding: 1px 4px;
+}
+
+.btn-site-red{
+  background-color: $color-red;
+  color: $color-white !important;
+  text-decoration: none !important;
+  transition: all 0.5s;
+  font-weight: 600;
+  display: inline-block;
+  &:hover{
+    filter: brightness(90%);
+    color: $color-white;
+  }
+}
